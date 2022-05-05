@@ -89,3 +89,83 @@ header .title {
   width: 1440px;
   margin: 0 auto;
 }
+
+.right-side {
+  display: flex;
+  justify-self: end;
+}
+
+.right-side ul {
+  margin-right: 20px;
+}
+
+main {
+  margin-top: 260px;
+}
+
+.main__wrapper {
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+
+.main__wrapper .container {
+  display: flex;
+}
+
+.main__text {
+  width: 860px;
+}
+
+.main__title {
+  margin-bottom: 32px;
+}
+
+.main__title h1 {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.055rem;
+}
+
+.main__desc p {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 2.65rem;
+}
+
+.main__next {
+  position: absolute;
+  display: flex;
+  right: -10px;
+  height: 100%;
+  width: 570px;
+  background-color: red;
+  border-radius: 16px 0 0 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  bottom: 48px;
+}
+
+.main__next__wrapper {
+  padding: 48px 60px 48px 36px;
+}
+
+.main__next__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 36px;
+}
+
+.main__next__text {
+  width: 204px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.main__arrow {
+  position: absolute;
+  bottom: 44px;
+}
