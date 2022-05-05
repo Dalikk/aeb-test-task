@@ -47,3 +47,45 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
+
+header {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  border-bottom: 1px solid rgba(231, 231, 242, 0.4);
+}
+
+header .title {
+  justify-self: center;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+  font-size: 18px;
+  margin-right: 60px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .title {
+  font-size: 16px;
+  font-weight: 900;
+  width: 271px;
+  text-align: center;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}

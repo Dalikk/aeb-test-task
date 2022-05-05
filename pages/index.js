@@ -1,7 +1,13 @@
+import Book from "../components/Book"
+import Header from "../components/Header"
+import Main from "../components/Main"
+
 export default function Home() {
   return (
-    <div>
-      <h1>Start</h1>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Book />
+    </>
   )
 }
