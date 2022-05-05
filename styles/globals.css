@@ -169,3 +169,51 @@ main {
   position: absolute;
   bottom: 44px;
 }
+
+.book {
+  height: 200px;
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  border-radius: 20px 20px 0px 0px;
+  padding: 35px 48px;
+}
+
+.book__title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  margin-bottom: 16px;
+}
+
+.book__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__form__inputs {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid rgba(231, 231, 242, 0.3);
+  border-radius: 10px;
+}
+
+.input__wrapper {
+  border-right: 1px solid rgba(231, 231, 242, 0.3);
+}
+
+.input__wrapper:last-child {
+  border-right: none;
+}
+
+.book__btn {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 240px;
+  padding: 27px 0 25px 0;
+  background-color: #91CB82;
+  border-radius: 10px;
+  cursor: pointer;
+}
