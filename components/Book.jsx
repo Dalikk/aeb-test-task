@@ -10,7 +10,7 @@ const Book = () => {
         </div>
         <div className="book__form">
           <div className="book__form__inputs">
-            <div className="input__wrapper" style={{width:'464px'}}>
+            <div className="input__wrapper" style={{maxWidth:'464px'}}>
               <Input 
                 title="Accomodation"
                 content="6730 Luna Land North Rhiannonmouth"
@@ -31,7 +31,7 @@ const Book = () => {
                 content="19.06.2019"
               />
             </div>
-            <div className="input__wrapper" style={{width:'266px'}}>
+            <div className="input__wrapper" style={{maxWidth:'266px'}}>
               <Input 
                 title="Guests"
                 content="4 adults"

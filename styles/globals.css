@@ -86,7 +86,7 @@ header .title {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -101,12 +101,8 @@ header .title {
 
 main {
   margin-top: 260px;
-}
-
-.main__wrapper {
-  position: relative;
-  display: flex;
   height: 400px;
+  position: relative;
 }
 
 .main__wrapper .container {
@@ -114,7 +110,7 @@ main {
 }
 
 .main__text {
-  width: 860px;
+  padding-right: 550px;
 }
 
 .main__title {
@@ -216,4 +212,5 @@ main {
   background-color: #91CB82;
   border-radius: 10px;
   cursor: pointer;
+  align-self: center;
 }
