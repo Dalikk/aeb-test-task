@@ -1,5 +1,45 @@
 import Image from "next/image"
-import Input from "./Input"
+import DatePicker from "./DatePicker"
+import Select from "./Select"
+
+const contents = {
+  accomodation: [
+    {
+      id: 1,
+      content: '6730 Luna Land North Rhiannonmouth',
+    },
+    {
+      id: 2,
+      content: '4515 Lorem, ipsum dolor',
+    },
+    {
+      id: 3,
+      content: '1813 Sit amet consectetur',
+    },
+    {
+      id: 4,
+      content: '4812 Iure dolore recusandae iste',
+    },
+  ],
+  guests: [
+    {
+      id: 1,
+      content: '1 adult',
+    },
+    {
+      id: 2,
+      content: '2 adults',
+    },
+    {
+      id: 3,
+      content: '3 adults',
+    },
+    {
+      id: 4,
+      content: '4 adults',
+    },
+  ]
+}
 
 const Book = () => {
   return (
@@ -10,33 +50,35 @@ const Book = () => {
         </div>
         <div className="book__form">
           <div className="book__form__inputs">
-            <div className="input__wrapper" style={{maxWidth:'464px'}}>
-              <Input 
+            <div className="input__wrapper" style={{maxWidth:'462px'}}>
+              <Select
                 title="Accomodation"
-                content="6730 Luna Land North Rhiannonmouth"
+                content={contents.accomodation}
                 icon="/img/icon/home-icon.svg"
-                arrow
               />
             </div>
-            <div className="input__wrapper" style={{width:'192px'}}>
-              <Input 
-                title="Check-in"
-                content="19.06.2019"
-                icon="/img/icon/calendar-icon.svg"
-              />
+            <div className="input__wrapper" style={{width:'192px', position:'relative'}}>
+              <div className="input__icon__wrapper" >
+                <Image className="input__icon" src="/img/icon/calendar-icon.svg" fill="#E7E7F2" alt="Calendar" width={28} height={28} />
+              </div>
+              <div style={{marginLeft: '40px'}}>
+                <DatePicker
+                  title="Check-in"
+                  date="2019-06-19"
+                />
+              </div>
             </div>
             <div className="input__wrapper" style={{width:'152px'}}>
-              <Input 
+              <DatePicker
                 title="Check-out"
-                content="19.06.2019"
+                date="2019-06-19"
               />
             </div>
-            <div className="input__wrapper" style={{maxWidth:'266px'}}>
-              <Input 
+            <div className="input__wrapper" style={{width:'266px'}}>
+              <Select
                 title="Guests"
-                content="4 adults"
+                content={contents.guests}
                 icon="/img/icon/human-icon.svg"
-                arrow
               />
             </div>
           </div>

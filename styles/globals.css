@@ -195,7 +195,15 @@ main {
 }
 
 .input__wrapper {
+  display: flex;
+  align-items: center;
   border-right: 1px solid rgba(231, 231, 242, 0.3);
+}
+
+.input__icon__wrapper {
+  position: absolute;
+  left: 15px;
+  top: 24px
 }
 
 .input__wrapper:last-child {
@@ -213,4 +221,8 @@ main {
   border-radius: 10px;
   cursor: pointer;
   align-self: center;
+}
+
+.book input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
 }
